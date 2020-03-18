@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <!-- jquery & bootstrap js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
     <!-- style -->
     <style>
         body {
@@ -65,6 +65,12 @@
             padding-bottom: 50px;
             font-size: 12px;
         }
+
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
     </style>
 
     <!--출처: https://hongku.tistory.com/304 [IT에 취.하.개.] -->
@@ -73,30 +79,72 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
 
-    <!-- nav bars -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">KNPS</a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"> <a class="nav-link" href="#">Profile</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">생물자원</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">탐방수요예측</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">공지사항</a> </li>
-            </ul>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="#">페이스북</a> </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="#">인스타그램</a> </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item"> <a class="nav-link" href="#">Login</a> </li>
-            </ul>
+            <!-- Brand -->
+            <a class="navbar-brand" href="http://www.knps.or.kr" target="_blank">
+                <strong>KNPS</strong>
+            </a>
+
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Left -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">생물자원</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">탐방수요예측</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">공지사항</a>
+                    </li>
+                </ul>
+
+                <!-- Right -->
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://web1mhz.github.io/wildlife/"
+                            class="nav-link border border-light rounded" target="_blank">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
     </nav>
+    <!-- Navbar -->
 
-
+    
     <!-- main content -->
     <div class="container-fluid text-center bg-main">
 
@@ -142,13 +190,14 @@
             </div>
             <div class="col-sm-4">
                 <ul>
-                <P class="text-center"><strong>소통공감</strong></P>
-                <li>국립공원을 지켜내는 일은 국민과 미래를 위한 행복한 세상을 만들어 가기 위한 소명임. 이를 이루기 위해서는 조직의 활력을 위해 뜻과 생각의 자유로운 수평적 소통문화가 필요하며,
-                    지역주민 등 이해관계자와 공감하는 동반자적 관계가 구축되어야 함.</li><br />
+                    <P class="text-center"><strong>소통공감</strong></P>
+                    <li>국립공원을 지켜내는 일은 국민과 미래를 위한 행복한 세상을 만들어 가기 위한 소명임. 이를 이루기 위해서는 조직의 활력을 위해 뜻과 생각의 자유로운 수평적 소통문화가
+                        필요하며,
+                        지역주민 등 이해관계자와 공감하는 동반자적 관계가 구축되어야 함.</li><br />
 
-                <li> 자연을 지키는 것에 대하여 국민과 함께 소통‧공감한다면, 자연과 인간이 공존하고 더불어 행복한 국립공원의 미션을 달성할 수 있음.</li><br />
+                    <li> 자연을 지키는 것에 대하여 국민과 함께 소통‧공감한다면, 자연과 인간이 공존하고 더불어 행복한 국립공원의 미션을 달성할 수 있음.</li><br />
 
-                <li> 비전인 ‘자연‧사람‧미래 연결’, 국정철학인 ‘국민이 주인인 정부’ 반영 </li><br />
+                    <li> 비전인 ‘자연‧사람‧미래 연결’, 국정철학인 ‘국민이 주인인 정부’ 반영 </li><br />
                 </ul>
 
             </div>
@@ -170,9 +219,6 @@
     <div class="container-fluid text-center footer">
         <p>KNPS’s hompage is powered by TG, KIM / Designed by TG</p>
     </div>
-
-
-
 
 </body>
 
